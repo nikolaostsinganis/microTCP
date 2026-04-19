@@ -36,3 +36,9 @@ mkdir build
 cd build
 cmake ..
 make
+
+# Run as server
+./bandwidth_test -m -s -p [port] -f [output_file]
+
+# Run as client
+./bandwidth_test -m -p [port] -a [server_ip] -f [input_file]
